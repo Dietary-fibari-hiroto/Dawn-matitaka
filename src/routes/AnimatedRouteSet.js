@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 
 const AnimatedRouteSet = ({ children }) => {
+    //animationのプロパティ設定
     const animation = {
         initial: { opacity: 0 },
         animate: { opacity: 1 },

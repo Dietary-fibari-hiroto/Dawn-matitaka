@@ -6,7 +6,6 @@ import "./assets/styles/CustomBackground.css"
 import "./assets/styles/AnimationStyles.css"
 import "./assets/styles/HookStyles.css"
 
-
 import { HashRouter as Router } from "react-router-dom"
 import AssemblyRouted from './routes/AssemblyRouted';
 

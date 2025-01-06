@@ -1,3 +1,8 @@
+/**
+ * このファイルをインポートすることで、
+ * この中に定義しているすべての画像を使用可能
+ */
+
 const ImagesRoutes = {
     haruhi2: require("./images/haruhi2.jpeg"),
     haryhi1: require("./images/haryhi1.jpeg"),
