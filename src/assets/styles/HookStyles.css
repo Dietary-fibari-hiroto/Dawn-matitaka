@@ -1,0 +1,12 @@
+.opacityBefore {
+    opacity: 0;
+    transition: opacity 2s ease-out;
+}
+
+.opacityAfter {
+    opacity: 1;
+}
+
+.tracked-element {
+    transition: transform 2s ease-in-out;
+}

@@ -1,0 +1,51 @@
+.flex-all-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-frame {
+    width: 100vw;
+    height: 100vh;
+}
+
+.day-mode {
+    color: black;
+}
+
+.night-mode {
+    color: white;
+}
+
+.text-vertical {
+    writing-mode: vertical-rl;
+}
+
+.text-90rotate {
+    writing-mode: sideways-lr;
+}
+
+.arrow {}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid #000;
+
+    /* 矢印の色 */
+}
+
+.arrow-rod {
+    top: 50%;
+    transform: translateY(50%);
+    border-bottom: black solid 1px;
+    width: 150px;
+    transition: all 0.3s ease-in-out;
+}
+
+.arrow:hover .arrow-rod {
+    width: 300px;
+}
