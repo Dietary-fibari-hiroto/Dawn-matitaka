@@ -10,6 +10,16 @@
     height: 100vh;
 }
 
+@media(max-width:480px) {
+    .section-frame {
+        width: 100lvw;
+        height: 100lvh;
+        overflow-x: hidden;
+    }
+}
+
+
+
 .day-mode {
     color: black;
 }

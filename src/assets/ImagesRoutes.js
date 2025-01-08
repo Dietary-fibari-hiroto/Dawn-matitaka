@@ -26,7 +26,7 @@ const ImagesRoutes = {
     group_98: require("./images/group_98.png"),
     menu: require("./images/menu.png"),
     menu_bl: require("./images/menu-bl.png"),
-    manami_hydoro: require("./images/manami_hydoro.jpg"),
+    manami_hydoro: require("./images/manami_hydoro.png"),
     sakura: require("./images/sakura.jpg"),
     Instagram_icon: require("./images/Instagram_icon.png"),
     cancel: require("./images/cancel.png")

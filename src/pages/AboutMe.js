@@ -44,7 +44,7 @@ const AboutMe = () => {
             <section className={`relative section-frame flex justify-around items-center max-sm:flex-col`}>
                 <div className={`rotating-animation absolute z-[3] top-[50%] left-[30%] w-[300px] h-[150px] bg-gradient-to-b from-[#BC78FF] to-[#3DBBFF] blur-[50px] rounded-[50%] opacity-[50%]`}></div>
 
-                <div className={`space-y-[50px] z-[5]`}>
+                <div className={`space-y-[50px] z-[5] max-sm:order-2`}>
                     <p className={`useAO ${AOStyle} string-md A-OTF-Ryumin-Pr6N-L-KLL`}>なぜ「街角のたからもの」なの？</p>
                     <p className={`useAO ${AOStyle} A-OTF-Ryumin-Pr6N-L-KL string-ssm text-start border-l border-black pl-[10px] space-y-[5px]`}>
 
@@ -56,8 +56,8 @@ const AboutMe = () => {
                     </p>
 
                 </div>
-                <figure className={`z-[5]`}>
-                    <img className={`useAO ${AOStyle} w-[300px] rounded-[10px]`} src={ImagesRoutes.manami_hydoro} alt="photo1" />
+                <figure className={`z-[5] max-sm:order-1`}>
+                    <img className={`useAO ${AOStyle} w-[300px] rounded-[10px] max-sm:w-[250px]`} src={ImagesRoutes.manami_hydoro} alt="photo1" />
                 </figure>
             </section>
 
@@ -83,7 +83,7 @@ const AboutMe = () => {
             <section className={`section-frame flex justify-evenly items-center max-sm:flex-col`}>
 
 
-                <div className={`space-y-[50px] z-[5]`}>
+                <div className={`space-y-[50px] z-[5] max-sm:order-2`}>
                     <p className={`useAO ${AOStyle} string-md A-OTF-Ryumin-Pr6N-L-KLL`}>レタッチ</p>
                     <p className={`useAO ${AOStyle} A-OTF-Ryumin-Pr6N-L-KL string-ssm text-start border-l border-black pl-[10px] space-y-[5px] mx-[20px]`}>
                         レタッチには主にAdobe LightroomとPhotoshopを使用しています。<br />
@@ -91,14 +91,14 @@ const AboutMe = () => {
                         撮影後は、写真の色調や明るさを調整し、<br />
                         ふんわりとした柔らかな雰囲気を作り出すことを意識しています。<br />
                         特に、光が少し漏れているような感じや、自然なハイライトを加えることで、<br />
-                        温かみのある印象を与えるよう心がけています。<br />
+                        温かみのある印象を与えるようにレタッチしています。<br />
                     </p>
                 </div>
-                <figure className={`slideshow-container useAO ${AOStyle} z-[5] h-[450px] max-w-[300px]`}>
+                <figure className={`max-sm:order-1 slideshow-container useAO ${AOStyle} z-[5] max-h-[450px] max-w-[300px] max-sm:max-w-[250px]`}>
                     {retouchImg.map((image, index) => (
                         <div
                             key={index}
-                            className="slide h-[450px] w-[300px] rounded-[10px]"
+                            className="slide h-full w-full rounded-[10px] max-sm:h-[400px]"
                             style={{
                                 backgroundImage: `url(${image})`,
                                 animationDelay: `${index * 4}s`, // それぞれのスライドに異なる遅延を設定
