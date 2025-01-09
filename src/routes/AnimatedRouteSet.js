@@ -3,9 +3,9 @@ import { motion } from "framer-motion"
 const AnimatedRouteSet = ({ children }) => {
     //animationのプロパティ設定
     const animation = {
-        initial: { opacity: 0 },
-        animate: { opacity: 1 },
-        exit: { opacity: 0 },
+        initial: { opacity: 0, filter: "blur(50px)" },
+        animate: { opacity: 1, filter: "blur(0px)" },
+        exit: { opacity: 0, filter: "blur(50px)" },
         transition: { duration: 0.5 },
     }
 

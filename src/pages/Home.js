@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-import React, { useEffect } from "react"
+import React from "react"
 import Header from "../components/Header"
 
 import ImagesRoutes from "../assets/ImagesRoutes"
@@ -8,18 +8,24 @@ import Album from "../components/Album"
 
 import UseOpacityAnimation from "../hooks/UseOpacityAnimation"
 import Catch from "../components/Catch"
+import Finder from "../components/Finder"
 
 const Home = () => {
     const { AOStyle } = UseOpacityAnimation();
     return (
         <div className={``}>
             <Header />
+            <Finder />
             {/**TOP */}
-            <section className={`rerative section-frame top-background text-white `} style={{ backgroundImage: `url(${ImagesRoutes.manami_hydoro})`, backgroundPosition: '50% 45%' }}>
-                <div className={`absolute right-[15%] top-[50%] translate-y-[-50%] VDL-PenLetter flex items-start text-[50px] max-sm:flex-col max-sm:right-[20%]`}>
-                    <p className={`text-vertical`}>街角の</p>
-                    <p className={`text-vertical`}>たからもの。</p>
-                    <p className={`text-vertical string-ss tracking-[5px]`}>Photo portfolio</p>
+            <section className={`relative section-frame top-background text-white `} style={{ backgroundImage: `url(${ImagesRoutes.manami_hydoro})`, backgroundPosition: '50% 45%' }}>
+                <div className={`absolute z-[20] right-[15%] top-[50%] translate-y-[-50%] VDL-PenLetter text-[50px] max-sm:top-[30%] max-sm:right-[10%]`}>
+                    <div className="relative flex justify-center items-start w-[200px] h-[300px] ">
+
+                        <p className={`absolute top-0 left-0  text-vertical bg-[#FF6DCDA0]`}>街角の</p>
+                        <p className={`ml-[50px] text-vertical bg-[#FF6DCDA0]`}>たからもの。</p>
+                        <p className={`absolute bottom-0 right-0 text-vertical bg-[#FF6DCDA0] string-ss tracking-[5px] `}>Photo portfolio</p>
+
+                    </div>
                 </div>
             </section>
             {/**TITLE */}

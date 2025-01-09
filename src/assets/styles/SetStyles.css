@@ -29,7 +29,7 @@
 }
 
 .text-vertical {
-    writing-mode: vertical-rl;
+    writing-mode: vertical-lr;
 }
 
 .text-90rotate {
@@ -58,4 +58,127 @@
 
 .arrow:hover .arrow-rod {
     width: 300px;
+}
+
+
+/*以下finder線*/
+
+
+.camera-frame {
+    position: relative;
+    position: absolute;
+    width: 100lvw;
+    height: 100lvh;
+    pointer-events: none;
+    z-index: 10;
+}
+
+/*focus-line*/
+.focus-line-top {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.focus-line-bottom {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.focus-line-left {
+    position: absolute;
+    bottom: 50%;
+    left: 15%;
+    transform: translateY(50%);
+}
+
+.focus-line-right {
+    position: absolute;
+    bottom: 50%;
+    right: 15%;
+    transform: translateY(50%);
+}
+
+.line-horizontal-top {
+    border-top: solid white 1px;
+    width: 30vw;
+}
+
+.line-horizontal-bottom {
+    border-bottom: solid white 1px;
+    width: 30vw;
+}
+
+.line-vertical-left {
+    border-left: solid white 1px;
+    height: 200px;
+}
+
+.line-vertical-right {
+    border-right: solid white 1px;
+    height: 200px;
+}
+
+.line-mini-vertical {
+    border-left: solid white 1px;
+    height: 20px;
+}
+
+.line-mini-horizontal {
+    border-top: solid white 1px;
+    width: 20px;
+}
+
+/*grid-line*/
+.grid-top {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: solid white 1px;
+    height: 30px;
+}
+
+.grid-bottom {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: solid white 1px;
+    height: 30px;
+}
+
+.grid-left {
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    border-top: solid white 1px;
+    width: 30px;
+}
+
+.grid-right {
+    position: absolute;
+    bottom: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    border-top: solid white 1px;
+    width: 30px;
+}
+
+
+/*focus-point*/
+.focus-point {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    border: solid white 1px;
+    transform: translate(-50%, -50%);
 }

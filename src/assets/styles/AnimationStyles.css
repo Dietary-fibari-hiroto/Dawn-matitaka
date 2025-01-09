@@ -1,4 +1,5 @@
 .rotating-animation {
+    overflow-x: hidden;
     animation: rotateAnimation 15s linear infinite;
 }
 

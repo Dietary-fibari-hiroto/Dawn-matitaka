@@ -7,12 +7,14 @@ import AnimatedRouteSet from "./AnimatedRouteSet";//ページ遷移時のanimati
 import Home from "../pages/Home";
 import AboutMe from "../pages/AboutMe";
 import PageScrollReset from "../hooks/PageScrollReset";
+import Test from "../test/Test";
 
 
 //ロート管理
 const routerList = [
     { path: "/", element: <Home /> },
-    { path: "/about", element: <AboutMe /> }
+    { path: "/about", element: <AboutMe /> },
+    { path: "/test", element: <Test /> }
 ]
 
 /**
