@@ -6,7 +6,7 @@ const AnimatedRouteSet = ({ children }) => {
         initial: { opacity: 0, filter: "blur(50px)" },
         animate: { opacity: 1, filter: "blur(0px)" },
         exit: { opacity: 0, filter: "blur(50px)" },
-        transition: { duration: 0.5 },
+        transition: { duration: 1 },
     }
 
     return (

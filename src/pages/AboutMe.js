@@ -22,9 +22,9 @@ const AboutMe = () => {
         return () => clearInterval(interval);
     })
     return (
-        <div>
+        <div className="w-[100vw] overflow-x-hidden">
             <Header />
-            <section className={`rerative section-frame top-background text-white`} style={{ backgroundImage: `url(${ImagesRoutes.sakura})` }}>
+            <section className={`relative section-frame top-background text-white`} style={{ backgroundImage: `url(${ImagesRoutes.sakura})` }}>
                 <div className={`absolute left-[20%] top-[50%] translate-y-[-50%] VDL-PenLetter flex items-start text-[50px]`}>
                     <p>About me</p>
                 </div>
@@ -37,16 +37,16 @@ const AboutMe = () => {
                 <div className={`rotating-animation absolute z-[3] top-[10%] left-[10%] w-[300px] h-[150px] bg-gradient-to-b from-[#00DCFF] to-[#FFEE00] blur-[50px] rounded-[50%] opacity-[50%]`}></div>
                 <div className={`rotating-animation absolute z-[3] bottom-[10%] right-[10%] w-[300px] h-[150px] bg-gradient-to-t from-[#00DCFF] to-[#FFA078] blur-[50px] rounded-[50%] opacity-[50%]`}></div>
 
-                <p className={`useAO ${AOStyle} text-[30px] z-[5] max-sm:text-[15px]`}>誰かにとって、大切な景色が街中にあふれている。</p>
+                <p className={`useAO ${AOStyle} text-[30px] z-[5] max-sm:text-[15px] `}>誰かにとって、大切な景色が街中にあふれている。</p>
             </section>
 
             {/** EXSANPLE */}
-            <section className={`relative section-frame flex justify-around items-center max-sm:flex-col`}>
+            <section className={`relative flex justify-around items-center max-sm:flex-col max-sm:space-y-[20px] my-[20px]`}>
                 <div className={`rotating-animation absolute z-[3] top-[50%] left-[30%] w-[300px] h-[150px] bg-gradient-to-b from-[#BC78FF] to-[#3DBBFF] blur-[50px] rounded-[50%] opacity-[50%]`}></div>
 
-                <div className={`space-y-[50px] z-[5] max-sm:order-2`}>
-                    <p className={`useAO ${AOStyle} string-md A-OTF-Ryumin-Pr6N-L-KLL`}>なぜ「街角のたからもの」なの？</p>
-                    <p className={`useAO ${AOStyle} A-OTF-Ryumin-Pr6N-L-KL string-ssm text-start border-l border-black pl-[10px] space-y-[5px]`}>
+                <div className={`space-y-[50px] z-[6] max-sm:order-2 flex-all-center`}>
+                    <p className={`useAO ${AOStyle} string-md A-OTF-Ryumin-Pr6N-L-KLL heading-title w-[380px]`}>「街角のたからもの」とは？</p>
+                    <p className={`useAO ${AOStyle} A-OTF-Ryumin-Pr6N-L-KL string-ssm text-start border-l border-black pl-[10px] space-y-[5px] `}>
 
                         このポートフォリオサイトの名前は、<br />
                         「誰かにとって大切な景色が街中にあふれている」<br />
@@ -61,15 +61,15 @@ const AboutMe = () => {
                 </figure>
             </section>
 
-            <section className={`relative section-frame flex justify-around items-center max-sm:flex-col`}>
+            <section className={`relative flex justify-around items-center max-sm:flex-col max-sm:space-y-[20px]`}>
                 <div className={`rotating-animation absolute z-[3] top-[50%] right-[30%] w-[300px] h-[150px] bg-gradient-to-b from-[#CCCCCC] to-[#3DBBFF] blur-[50px] rounded-[50%] opacity-[50%]`}></div>
 
 
                 <figure className={`z-[5]`}>
                     <img className={`rounded-[10px] useAO ${AOStyle} h-[250px]`} src={ImagesRoutes.IMG_manami1} alt="photo2" />
                 </figure>
-                <div className={`space-y-[50px] z-[5] mx-[20px]`}>
-                    <p className={`useAO ${AOStyle} string-md A-OTF-Ryumin-Pr6N-L-KLL`}>撮影スタイル</p>
+                <div className={`space-y-[50px] z-[6] mx-[20px] flex-all-center`}>
+                    <p className={`useAO ${AOStyle} string-md A-OTF-Ryumin-Pr6N-L-KLL heading-title `}>撮影スタイル</p>
                     <p className={`useAO ${AOStyle} A-OTF-Ryumin-Pr6N-L-KL string-ssm text-start border-l border-black pl-[10px] space-y-[5px]`}>
                         私は普段、写真を撮る際に特にテーマを決めず、<br />
                         行き当たりばったりで撮影することが多いです。<br />
@@ -80,11 +80,11 @@ const AboutMe = () => {
                     </p>
                 </div>
             </section>
-            <section className={`section-frame flex justify-evenly items-center max-sm:flex-col`}>
+            <section className={`relative section-frame flex justify-evenly items-center max-sm:flex-col`}>
 
 
-                <div className={`space-y-[50px] z-[5] max-sm:order-2`}>
-                    <p className={`useAO ${AOStyle} string-md A-OTF-Ryumin-Pr6N-L-KLL`}>レタッチ</p>
+                <div className={` space-y-[50px] z-[6] max-sm:order-2 flex-all-center`}>
+                    <p className={`useAO ${AOStyle} string-md A-OTF-Ryumin-Pr6N-L-KLL heading-title`}>レタッチ</p>
                     <p className={`useAO ${AOStyle} A-OTF-Ryumin-Pr6N-L-KL string-ssm text-start border-l border-black pl-[10px] space-y-[5px] mx-[20px]`}>
                         レタッチには主にAdobe LightroomとPhotoshopを使用しています。<br />
                         なんでもない写真を鮮やかに。をモットーに<br />
@@ -108,14 +108,14 @@ const AboutMe = () => {
                 </figure>
             </section>
 
-            <section className={`relative section-frame flex justify-evenly items-center max-sm:flex-col`}>
+            <section className={`relative flex justify-evenly items-center max-sm:flex-col max-sm:space-y-[20px] my-[20px]`}>
                 <div className={`rotating-animation absolute z-[3] top-[50%] left-[30%] w-[300px] h-[150px] bg-gradient-to-b from-[#BC78FF] to-[#3DBBFF] blur-[50px] rounded-[50%] opacity-[50%]`}></div>
 
                 <figure className={`z-[5]`}>
                     <img className={`useAO ${AOStyle} w-[300px]`} src={ImagesRoutes.IMG_4047} alt="photo1" />
                 </figure>
-                <div className={`space-y-[50px] z-[5]`}>
-                    <p className={`useAO ${AOStyle} string-md A-OTF-Ryumin-Pr6N-L-KLL`}>Contact</p>
+                <div className={`space-y-[50px] z-[6] flex-all-center`}>
+                    <p className={`useAO ${AOStyle} string-md A-OTF-Ryumin-Pr6N-L-KLL heading-title`}>Contact</p>
                     <p className={`useAO ${AOStyle} A-OTF-Ryumin-Pr6N-L-KL string-ssm text-start border-l border-black pl-[10px] space-y-[5px]`}>
 
                         ご連絡、または撮影依頼は下記e-mail<br />
