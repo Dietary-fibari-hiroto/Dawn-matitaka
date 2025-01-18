@@ -1,247 +1,237 @@
 .flex-all-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-frame {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
-
-
-
 .day-mode {
-    color: black;
+  color: black;
 }
 
 .night-mode {
-    color: white;
+  color: white;
 }
 
 .text-vertical {
-    writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
 }
 
 .text-90rotate {
-    writing-mode: sideways-lr;
+  writing-mode: sideways-lr;
 }
 
-.arrow {}
+.arrow {
+}
 
 .arrow-right {
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 10px solid #000;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid;
 
-    /* 矢印の色 */
+  /* 矢印の色 */
 }
 
 .arrow-rod {
-    top: 50%;
-    transform: translateY(50%);
-    border-bottom: black solid 1px;
-    width: 150px;
-    transition: all 0.3s ease-in-out;
+  top: 50%;
+  transform: translateY(50%);
+  border-bottom: solid 1px;
+  width: 150px;
+  transition: all 0.3s ease-in-out;
 }
 
 .arrow:hover .arrow-rod {
-    width: 300px;
+  width: 300px;
 }
 
 /*タイトルのbg要素*/
 .title-bg-style {
-    background-color: #FF6DCDA0;
-    animation: title-bg-style-animation 5s ease-in-out infinite;
-
+  background-color: #ff6dcda0;
+  animation: title-bg-style-animation 5s ease-in-out infinite;
 }
 
 .title-bg-style:nth-child(1) {
-    animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 .title-bg-style:nth-child(2) {
-    animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .title-bg-style:nth-child(3) {
-    animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .heading-title {
-    background-color: #FFA2DF;
-    color: white;
-    padding: 0 20px;
-    min-width: 300px;
+  background-color: #ffa2df;
+  color: white;
+  padding: 0 20px;
+  min-width: 300px;
 }
 
+@media (max-width: 480px) {
+  .section-frame {
+    width: 100lvw;
+    height: 100lvh;
+    overflow-x: hidden;
+  }
 
-@media(max-width:480px) {
-    .section-frame {
-        width: 100lvw;
-        height: 100lvh;
-        overflow-x: hidden;
-    }
-
-    .heading-title {
-        position: absolute;
-        top: 10%;
-        left: 3%
-    }
-
+  .heading-title {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+  }
 }
 
 @keyframes title-bg-style-animation {
+  0%,
+  20%,
+  100% {
+    background-color: #ff6dcda0;
+    transform: translateY(0) scale(1);
+  }
 
-    0%,
-    20%,
-    100% {
-        background-color: #FF6DCDA0;
-        transform: translateY(0) scale(1);
-    }
-
-    10% {
-        background-color: #FFFFFFA0;
-        transform: translateY(-5%) scale(1.1);
-
-    }
+  10% {
+    background-color: #ffffffa0;
+    transform: translateY(-5%) scale(1.1);
+  }
 }
 
 /*以下finder線*/
 
-
 .camera-frame {
-    position: relative;
-    position: absolute;
-    width: 100lvw;
-    height: 100lvh;
-    pointer-events: none;
-    z-index: 10;
-    animation: finder-move 10s ease-in-out infinite;
+  position: relative;
+  position: absolute;
+  width: 100lvw;
+  height: 100lvh;
+  pointer-events: none;
+  z-index: 10;
+  animation: finder-move 10s ease-in-out infinite;
 }
 
 @keyframes finder-move {
+  0%,
+  100% {
+    transform: translateY(0%);
+  }
 
-    0%,
-    100% {
-        transform: translateY(0%);
-    }
-
-    50% {
-        transform: translateY(3%);
-    }
+  50% {
+    transform: translateY(3%);
+  }
 }
 
 /*focus-line*/
 .focus-line-top {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
 }
 
 .focus-line-bottom {
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
 }
 
 .focus-line-left {
-    position: absolute;
-    bottom: 50%;
-    left: 15%;
-    transform: translateY(50%);
+  position: absolute;
+  bottom: 50%;
+  left: 15%;
+  transform: translateY(50%);
 }
 
 .focus-line-right {
-    position: absolute;
-    bottom: 50%;
-    right: 15%;
-    transform: translateY(50%);
+  position: absolute;
+  bottom: 50%;
+  right: 15%;
+  transform: translateY(50%);
 }
 
 .line-horizontal-top {
-    border-top: solid white 1px;
-    width: 30vw;
+  border-top: solid white 1px;
+  width: 30vw;
 }
 
 .line-horizontal-bottom {
-    border-bottom: solid white 1px;
-    width: 30vw;
+  border-bottom: solid white 1px;
+  width: 30vw;
 }
 
 .line-vertical-left {
-    border-left: solid white 1px;
-    height: 200px;
+  border-left: solid white 1px;
+  height: 200px;
 }
 
 .line-vertical-right {
-    border-right: solid white 1px;
-    height: 200px;
+  border-right: solid white 1px;
+  height: 200px;
 }
 
 .line-mini-vertical {
-    border-left: solid white 1px;
-    height: 20px;
+  border-left: solid white 1px;
+  height: 20px;
 }
 
 .line-mini-horizontal {
-    border-top: solid white 1px;
-    width: 20px;
+  border-top: solid white 1px;
+  width: 20px;
 }
 
 /*grid-line*/
 .grid-top {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-left: solid white 1px;
-    height: 30px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: solid white 1px;
+  height: 30px;
 }
 
 .grid-bottom {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-left: solid white 1px;
-    height: 30px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: solid white 1px;
+  height: 30px;
 }
 
 .grid-left {
-    position: absolute;
-    bottom: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    border-top: solid white 1px;
-    width: 30px;
+  position: absolute;
+  bottom: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  border-top: solid white 1px;
+  width: 30px;
 }
 
 .grid-right {
-    position: absolute;
-    bottom: 50%;
-    right: 10%;
-    transform: translateY(-50%);
-    border-top: solid white 1px;
-    width: 30px;
+  position: absolute;
+  bottom: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  border-top: solid white 1px;
+  width: 30px;
 }
-
 
 /*focus-point*/
 .focus-point {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 50%;
-    left: 50%;
-    border: solid white 1px;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  border: solid white 1px;
+  transform: translate(-50%, -50%);
 }

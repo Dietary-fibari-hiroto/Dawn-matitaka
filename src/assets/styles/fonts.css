@@ -1,60 +1,57 @@
 .string-sss {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .string-ssm {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .string-ss {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .string-sm {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .string-md {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .string-rg {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .string-lg {
-    font-size: 50px;
+  font-size: 50px;
 }
-
 
 .VDL-PenLetter {
-    font-family: vdl-penletter, sans-serif;
-    font-style: normal;
-    font-weight: 500;
+  font-family: vdl-penletter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
 
-
-
 .A-OTF-Ryumin-Pr6N-L-KL {
-    font-family: "a-otf-ryumin-pr6n", serif;
-    font-weight: 300;
-    font-style: normal;
+  font-family: "a-otf-ryumin-pr6n", serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .A-OTF-Ryumin-Pr6N-L-KLL {
-    font-family: "a-otf-ryumin-pr6n", serif;
-    font-weight: 800;
-    font-style: normal;
+  font-family: "a-otf-ryumin-pr6n", serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .kinutamarumin-fuji {
-    font-family: "kinuta-maruminfuji-stdn", serif;
-    font-style: normal;
-    font-weight: 400;
+  font-family: "kinuta-maruminfuji-stdn", serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .palast-variable {
-    font-family: "palast-variable", sans-serif;
-    font-style: normal;
-    font-variation-settings: "opsz" 160, "wght" 500;
+  font-family: "palast-variable", sans-serif;
+  font-style: normal;
+  font-variation-settings: "opsz" 160, "wght" 500;
 }
