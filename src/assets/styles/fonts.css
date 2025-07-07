@@ -21,9 +21,47 @@
 .string-rg {
   font-size: 30px;
 }
+.string-llg {
+  font-size: 40px;
+}
 
 .string-lg {
   font-size: 50px;
+}
+.string-big {
+  font-size: 100px;
+}
+@media (max-width: 1024px) {
+  .string-sss {
+    font-size: 7px;
+  }
+
+  .string-ssm {
+    font-size: 10px;
+  }
+
+  .string-ss {
+    font-size: 12px;
+  }
+
+  .string-sm {
+    font-size: 15px;
+  }
+
+  .string-md {
+    font-size: 17px;
+  }
+
+  .string-rg {
+    font-size: 20px;
+  }
+  .string-llg {
+    font-size: 25px;
+  }
+
+  .string-lg {
+    font-size: 40px;
+  }
 }
 
 .VDL-PenLetter {
@@ -54,4 +92,15 @@
   font-family: "palast-variable", sans-serif;
   font-style: normal;
   font-variation-settings: "opsz" 160, "wght" 500;
+}
+
+.UDDigiKyokashoProR {
+  font-family: "uddigikyokasho-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.section-title {
+  font-size: 30px;
+  border-bottom: solid black 1px;
 }

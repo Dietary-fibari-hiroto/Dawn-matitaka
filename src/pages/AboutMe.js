@@ -35,34 +35,20 @@ const AboutMe = () => {
       <section
         className={`relative section-frame flex-all-center VDL-PenLetter text-black`}
       >
-        <div
-          className={`absolute z-[3] top-[45%] right-[20%] w-[20vw] border-b border-black`}
-        ></div>
-        <div
-          className={`absolute z-[3] bottom-[45%] left-[20%] w-[20vw] border-t border-black`}
-        ></div>
-
-        <div
-          className={`rotating-animation absolute z-[3] top-[10%] left-[10%] w-[300px] h-[150px] bg-gradient-to-b from-[#00DCFF] to-[#FFEE00] blur-[50px] rounded-[50%] opacity-[50%]`}
-        ></div>
-        <div
-          className={`rotating-animation absolute z-[3] bottom-[10%] right-[10%] w-[300px] h-[150px] bg-gradient-to-t from-[#00DCFF] to-[#FFA078] blur-[50px] rounded-[50%] opacity-[50%]`}
-        ></div>
-
-        <p className={`useAO ${AOStyle} text-[30px] z-[5] max-sm:text-[15px] `}>
+        <p className={`useAO ${AOStyle} z-[5] max-sm:text-[15px] `}>
           誰かにとって、大切な景色が街中にあふれている。
         </p>
       </section>
 
       {/** EXSANPLE */}
       <section
-        className={`relative flex justify-around items-center max-sm:flex-col max-sm:space-y-[20px] my-[20px]`}
+        className={`relative flex justify-around items-center max-lg:flex-col max-lg:space-y-[20px] my-[50px]`}
       >
         <div
           className={`rotating-animation absolute z-[3] top-[50%] left-[30%] w-[300px] h-[150px] bg-gradient-to-b from-[#BC78FF] to-[#3DBBFF] blur-[50px] rounded-[50%] opacity-[50%]`}
         ></div>
 
-        <div className={`space-y-[50px] z-[6] max-sm:order-2 flex-all-center`}>
+        <div className={`space-y-[50px] z-[6] max-lg:order-2 flex-all-center`}>
           <p
             className={`useAO ${AOStyle} string-md A-OTF-Ryumin-Pr6N-L-KLL border-b-black border-b-[3px] w-[380px]`}
           >
@@ -83,17 +69,17 @@ const AboutMe = () => {
             <br />
           </p>
         </div>
-        <figure className={`z-[5] max-sm:order-1`}>
+        <figure className={`z-[5] max-lg:order-1`}>
           <img
-            className={`useAO ${AOStyle} h-[80lvh] rounded-[10px] max-sm:w-[250px]`}
-            src={ImagesRoutes.manami_hydoro}
+            className={`useAO ${AOStyle} h-[80lvh] w-[50vw] rounded-[10px] max-lg:w-full`}
+            src={ImagesRoutes.IMG_2858}
             alt="photo1"
           />
         </figure>
       </section>
 
       <section
-        className={`relative flex justify-around items-center max-sm:flex-col max-sm:space-y-[20px]`}
+        className={`relative flex justify-around items-center max-lg:flex-col max-lg:space-y-[20px] my-[50px]`}
       >
         <div
           className={`rotating-animation absolute z-[3] top-[50%] right-[30%] w-[300px] h-[150px] bg-gradient-to-b from-[#CCCCCC] to-[#3DBBFF] blur-[50px] rounded-[50%] opacity-[50%]`}
@@ -101,7 +87,7 @@ const AboutMe = () => {
 
         <figure className={`z-[5]`}>
           <img
-            className={`rounded-[10px] useAO ${AOStyle} h-[80lvh]`}
+            className={`rounded-[10px] useAO ${AOStyle} h-[80lvh] w-[60vw] max-lg:w-full`}
             src={ImagesRoutes.IMG_manami1}
             alt="photo2"
           />
@@ -131,9 +117,9 @@ const AboutMe = () => {
         </div>
       </section>
       <section
-        className={`relative section-frame flex justify-evenly items-center max-md:flex-col min-h-[80lvh]`}
+        className={`relative section-frame flex justify-evenly items-center max-lg:flex-col min-h-[80lvh] my-[50px]`}
       >
-        <div className={` space-y-[50px] z-[6] max-sm:order-2 flex-all-center`}>
+        <div className={` space-y-[50px] z-[6] max-lg:order-2 flex-all-center`}>
           <p
             className={`useAO ${AOStyle} string-md A-OTF-Ryumin-Pr6N-L-KLL border-b-black border-b-[3px]`}
           >
@@ -157,12 +143,12 @@ const AboutMe = () => {
           </p>
         </div>
         <figure
-          className={`max-sm:order-1 slideshow-container useAO ${AOStyle} z-[5] max-h-[80lvh] max-w-[60vw]  max-sm:max-w-[250px]`}
+          className={`max-lg:order-1 slideshow-container useAO ${AOStyle} z-[5] max-h-[80lvh] max-w-[60vw]  max-sm:max-w-[250px] `}
         >
           {retouchImg.map((image, index) => (
             <div
               key={index}
-              className="slide h-full w-full rounded-[10px] max-sm:h-[400px]"
+              className="slide h-full w-full rounded-[10px] max-lg:h-[350px]"
               style={{
                 backgroundImage: `url(${image})`,
                 animationDelay: `${index * 4}s`, // それぞれのスライドに異なる遅延を設定
@@ -173,7 +159,7 @@ const AboutMe = () => {
       </section>
 
       <section
-        className={`relative flex justify-evenly items-center max-sm:flex-col max-sm:space-y-[20px] my-[20px]`}
+        className={`relative flex justify-evenly items-center max-lg:flex-col max-lg:space-y-[20px] my-[50px]`}
       >
         <div
           className={`rotating-animation absolute z-[3] top-[50%] left-[30%] w-[300px] h-[150px] bg-gradient-to-b from-[#BC78FF] to-[#3DBBFF] blur-[50px] rounded-[50%] opacity-[50%]`}

@@ -19,3 +19,7 @@ code {
 img {
   object-fit: cover;
 }
+
+.vertical-text {
+  writing-mode: vertical-rl; /* 右から左へ縦書き */
+}

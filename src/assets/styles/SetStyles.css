@@ -26,20 +26,24 @@
   writing-mode: sideways-lr;
 }
 
-.arrow {
-}
-
-.arrow-right {
+.arrow-right,
+.arrow-right-b {
   width: 0;
   height: 0;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 10px solid;
-
-  /* 矢印の色 */
 }
 
-.arrow-rod {
+.arrow-right {
+  border-left: 10px solid white; /* 矢印の色 */
+}
+
+.arrow-right-b {
+  border-left: 10px solid black; /* 矢印の色 */
+}
+
+.arrow-rod,
+.arrow-rod-b {
   top: 50%;
   transform: translateY(50%);
   border-bottom: solid 1px;
@@ -47,7 +51,16 @@
   transition: all 0.3s ease-in-out;
 }
 
-.arrow:hover .arrow-rod {
+.arrow-rod {
+  border-color: white;
+}
+
+.arrow-rod-b {
+  border-color: black;
+}
+
+.arrow:hover .arrow-rod,
+.arrow:hover .arrow-rod-b {
   width: 300px;
 }
 
@@ -74,20 +87,6 @@
   color: white;
   padding: 0 20px;
   min-width: 300px;
-}
-
-@media (max-width: 480px) {
-  .section-frame {
-    width: 100lvw;
-    height: 100lvh;
-    overflow-x: hidden;
-  }
-
-  .heading-title {
-    position: absolute;
-    top: 10%;
-    left: 3%;
-  }
 }
 
 @keyframes title-bg-style-animation {
@@ -234,4 +233,56 @@
   left: 50%;
   border: solid white 1px;
   transform: translate(-50%, -50%);
+}
+
+.color-line {
+  border-left: #e60067 solid 1px;
+  padding: 20px 10px;
+}
+
+/*Albumのカード*/
+.album-card-container {
+  position: relative;
+  overflow: hidden;
+  size: auto;
+  flex-shrink: 0;
+  transition: all 0.3s ease-in-out;
+}
+.album-card-container > img {
+  transition: all 0.3s ease-in-out;
+  width: 500px;
+  height: 700px;
+}
+.album-card-container:hover > img {
+  scale: 1.1;
+}
+
+@media (max-width: 1024px) {
+  .album-card-container > img {
+    width: 250px;
+    height: 350px;
+  }
+}
+
+.bg-fixed-option {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 480px) {
+  .section-frame {
+    width: 100lvw;
+    height: 100lvh;
+    overflow-x: hidden;
+  }
+
+  .heading-title {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+  }
+  .bg-fixed-option {
+    background-attachment: local;
+  }
 }
